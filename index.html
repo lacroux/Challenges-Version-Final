@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="imagenes-Challenge/diamod.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <div class="container-fondo">
+        <img class="logo-alura" src="./imagenes-Challenge/Frame 6.png" alt="logo alura">
+    </header>
+    <main>
+        <div class="caja-encriptador">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Ingrese el texto a Encriptar"></textarea>
+        </div>
+        <div class="condiciones">
+            <p>Solo admite letras en minúsculas, sin acento ni caracteres especiales</p>
+        </div>
+        <div class="botones">
+            <button class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="desencriptar()" />
+        </div>
+        <div class="mensaje-encriptado">
+            <textarea readonly class="caja-encriptado" name="caja-encriptado" cols="30" rows="10" placeholder=""></textarea>
+            <img id="muñeco" class="muñeco" src="./imagenes-Challenge/Muñeco.png" alt="muñeco">
+            <div class="texto-encriptado" id="texto-encriptado">
+                <h2 id="caja-mensaje">No hay mensaje encriptado</h2>
+                <p id="caja-mensaje">Ingresa el texto que desea encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div>
+                <button class="boton-copiar" type="button" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="app.js"></script>
+    <script src="btn-copiar.js"></script>
+</body>
+</html>

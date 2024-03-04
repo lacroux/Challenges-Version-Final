@@ -1,0 +1,338 @@
+*{
+    font-family: "Inter";
+}
+
+.container-fondo {
+    width: 100%;
+    position: relative;
+    height: 1140px;
+    background: #EFF1FA;
+}
+.logo-alura {
+    margin: 50px;
+}
+.texto {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 3em;
+    top: 4em;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    line-height: 150%;
+    background-color: #EFF1FA;
+}
+
+.texto::placeholder {
+    color: #0A3871;
+}
+
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+
+.condiciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px auto;
+    gap: 10px;
+    position: absolute;
+    width: 70%;
+    left: 7em;
+    top: 80%;
+}
+
+.condiciones p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #363b3f;
+    opacity: 0.9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2% 0;
+    position: absolute;
+    width: 80%;
+    left: 7em;
+    top: 80%;
+}
+
+.boton-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    margin: 5px;
+    gap: 8px;
+    width: 25%;
+    background-color: #0A3871;
+    border-radius: 26px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boton-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5em;
+    gap: 8px;
+    width: 25%;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 26px;
+    color: #0A3871;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.boton-encriptar:hover,
+.boton-desencriptar:hover {
+    margin: 0.2em;
+    width: 26%;
+    padding: 1.5em;
+}
+
+.caja-encriptado {
+    width: 468px;
+    height: 515px;  
+}
+
+.caja-encriptado {
+    display: flex;
+    margin-top: 10px;
+    text-transform:lowercase;
+    border: none;
+}
+
+.caja-encriptado:focus, 
+.caja-encriptado:active {
+    border: none;
+    outline: none;
+}
+
+.caja-encriptado {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+   font-size: 32px;
+    text-align:start; 
+    gap: 8px;
+    top: 10%;        
+}
+
+.caja-encriptado::placeholder {
+    font-size: 18px;
+    font-family: "Inter";
+    color:#0A3871;
+}
+
+.boton-copiar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    padding: 1.5em;
+    gap: 8px;
+    background: #D8DFE8;
+    border-radius: 26px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    cursor: pointer;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    height: 75px;
+    margin-left: 1630px;
+    width: 12%;
+    top: 83%;
+}
+
+.mensaje-encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    left: 60%;
+    top: 2.5em;
+    background: #fff;
+    box-shadow: 0px 24px 32px 8px rgb(182, 157, 157);
+    border-radius: 32px;
+}
+
+.texto-encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 80%;
+}
+
+.texto-encriptado h2{
+    width: 60%;
+    font-size: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 470px;
+    color: #343A40;
+}
+
+.texto-encriptado p {
+    width: 80%;
+    font-size: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.mensaje-encriptado img {
+    position: absolute;
+    width: 75%;
+    height: 65%;
+    top: 7%;
+}
+
+
+/* Resposividad */
+
+@media (max-width: 480px) { 
+    .logo-alura {
+        display: flex;
+        width: 50px;
+        height: 20px;
+        margin-top: 2em;
+        margin-left: 20px;
+    }
+    .container-fondo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .caja-encriptador {
+        width: 100%;
+    }
+    .texto {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        font-size: 18px;
+        top: 10%;
+    }
+     .condiciones {
+        width: 85%;
+        left: 4%;
+        top: 70%;   
+    }
+    .condiciones p {
+        font-size: 10px;
+        padding-left: 1em;
+    }
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .boton-encriptar,
+    .boton-desencriptar {
+        width: 50%;
+        border-radius: 25px;
+        padding: 8px;
+        margin: 1em;
+
+    }
+    .boton-encriptar:hover,
+    .boton-desencriptar:hover {
+        width: 40%;
+        margin: 5%;
+        padding: 2%;
+    }    
+    .mensaje-encriptado {
+        width: 80%;
+        height: 35%;
+        left: 10%;
+        top: 85%;
+    }
+    .texto-encriptado, h2 {
+        display: none;
+        width: 100%;
+        margin: 50%;
+        top: 2em;
+    }
+    .texto-encriptado h2, p {
+        font-size: 18px;
+        top: 5px
+    }
+    .mensaje-encriptado img {
+        display: none;  
+    }
+    .caja-encriptado {
+        display: flex;
+        flex-direction: column;
+        
+        font-size: 18px;
+        top: 5%;
+    }
+    .caja-encriptado {
+        width: 280px;
+        height: 170px;
+        left: 5px;
+    }
+    .caja-encriptado::placeholder {
+        font-size: 18px;
+        font-family: "Inter";
+        color:#0A3871;
+    }
+    .boton-copiar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        width: 32%;
+        margin-left: 32%;
+        top:122%
+    }
+
+}
+
+
+
+
+
+
